@@ -47,6 +47,15 @@
                       <li><a href="#">Пункт 3</a></li>
                       <li><a href="#">Пункт 4</a></li>
                     </ul>
+                    <form action="" class="navbar-form navbar-right">
+                      <div class="form-group">
+                        <input type="text"  class="form-control" name="" placeholder="E-mail" value="">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="" placeholder="Пароль" value="">  
+                      </div>
+                      <button class="btn btn-primary"  type="submit"><i class="fa fa-sign-in"></i> Войти</button>
+                    </form>
                 </div>
               </div>
           </div>
@@ -230,11 +239,73 @@
      </div>
    </div>
    <div class="col-md-6">
-      
+    <a class="btn btn-primary  spoiler collapsed" href="#spoiler-1" data-toggle="collapse">Cпойлер</a>
+    <div class="collapse" id="spoiler-1">
+       <div class="well">
+        <p>Параграф с текстом</p>
+      </div>
+    </div>
    </div>
   </div>
  </div>
-
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="accordion" class="panel-group">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                 <a href="#collapse-1" data-toggle="collapse" class="">Открыть первый слайд</a>
+              </h4>
+            </div>
+            <div  id="collapse-1"class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p>Любой контент Любой контент Любой контент Любой контентЛюбой контент ЛюбойЛюбой контент Любой контент Любой контент Любой контент</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+             <h4 class="panel-title">
+                <a href="#collapse-2" data-toggle="collapse" class="">Открыть первый слайд</a>
+             </h4>
+            </div>
+            <div  id="collapse-2"class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Любой контент Любой контент Любой контент Любой контентЛюбой контент ЛюбойЛюбой контент Любой контент Любой контент Любой контент</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                 <a href="#collapse-3" data-toggle="collapse" class="">Открыть первый слайд</a>
+              </h4>
+            </div>
+            <div  id="collapse-3"class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Любой контент Любой контент Любой контент Любой контентЛюбой контент ЛюбойЛюбой контент Любой контент Любой контент Любой контент</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="min-width:2%;
+         width: 45%"></style>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
  <br>
  <br>
@@ -263,7 +334,22 @@
  <br>
  <br>
  <br>
-
+<div class="modal fade"  id="modal-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal"><i class="fa fa-close"></i></button>
+        <h4 class="modal-title">Название окна</h4>
+      </div>
+      <div class="modal-body">
+        <p>Это модальное окно</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" type="button" data-dismiss="modal">Отмена</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
